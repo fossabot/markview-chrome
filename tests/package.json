@@ -5,10 +5,12 @@
   "description": "Smoke + unit tests for the MarkView Chrome extension",
   "scripts": {
     "test:unit": "node --test unit/*.test.mjs",
+    "test:coverage": "cd .. && npx c8 --reporter=text --reporter=lcov --reporter=html --reports-dir=tests/coverage --include=detect.js --include=error-toast.js --exclude=tests/** --exclude=node_modules/** node --test tests/unit/*.test.mjs",
     "test:e2e": "playwright test",
     "test": "npm run test:unit && npm run test:e2e"
   },
   "devDependencies": {
-    "@playwright/test": "^1.48.0"
+    "@playwright/test": "^1.48.0",
+    "c8": "^10.1.3"
   }
 }

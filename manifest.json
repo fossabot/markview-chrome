@@ -42,7 +42,7 @@
         "*://app.box.com/*",
         "*://*.sharepoint.com/*"
       ],
-      "js": ["marked.min.js", "purify.min.js", "markview-renderer.js", "error-toast.js", "native-ai.js", "content-script.js"],
+      "js": ["detect.js", "marked.min.js", "purify.min.js", "markview-renderer.js", "error-toast.js", "native-ai.js", "content-script.js"],
       "css": ["markview-themes.css"],
       "run_at": "document_idle"
     }
@@ -61,7 +61,7 @@
   },
   "web_accessible_resources": [
     {
-      "resources": ["markview-renderer.js", "markview-toolbar.js", "markview-themes.css", "viewer.html", "viewer-init.js", "codemirror-bundle.js", "error-toast.js"],
+      "resources": ["markview-renderer.js", "markview-toolbar.js", "markview-themes.css", "viewer.html", "viewer-init.js", "codemirror-bundle.js", "error-toast.js", "detect.js"],
       "matches": ["<all_urls>"]
     }
   ],
