@@ -1,0 +1,43 @@
+node_modules/
+npm-debug.log*
+yarn-error.log*
+*.tgz
+
+# Build outputs
+markview-extension.zip
+markview-chrome*.zip
+*.crx
+
+# Test outputs + coverage reports
+tests/coverage/
+tests/playwright-report/
+tests/test-results/
+**/coverage/
+*.lcov
+lcov.info
+coverage.xml
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Secrets (defensive — should never be committed)
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.jks
+.env
+.env.*
+!.env.example
+secrets.json
+credentials.json
+auth.json
+extension-id.txt
