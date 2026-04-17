@@ -6,7 +6,7 @@
 
 ## Related issues
 
-<!-- "Closes #123" or "Relates to #456". Link the beads issue ID if applicable (e.g., MV-abc1). -->
+<!-- "Closes #123" or "Relates to #456". -->
 
 ## Type of change
 
@@ -18,13 +18,13 @@
 
 ## Checklist
 
-- [ ] Tests added or updated (`cargo test --workspace` passes)
-- [ ] Lints clean (`cargo clippy --workspace -- -D warnings`, `cargo fmt --all -- --check`)
-- [ ] Extension JS touched? Ran `npm audit` / Playwright smoke
-- [ ] CHANGELOG.md updated under `## [Unreleased]`
+- [ ] Tests added or updated (`cd tests && npm test`)
+- [ ] Coverage holds at 80%+ on tracked modules (`cd tests && npm run test:coverage`)
+- [ ] `npm audit` clean on any `package.json` changes
+- [ ] `CHANGELOG.md` updated under `## [Unreleased]`
 - [ ] Manifest `version` bumped if shipping a user-visible change
 - [ ] Screenshots attached for UI changes
-- [ ] Docs updated (README / AGENTS.md / docs/)
+- [ ] Docs updated (`README.md`, `CONTRIBUTING.md`, `docs/`)
 
 ## Test plan
 
